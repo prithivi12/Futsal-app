@@ -1,0 +1,425 @@
+/* Reset Stylesheet */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Actual code */
+/* Header */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+    font-family: "ABeeZee";
+    /* prevent from copying */
+    user-select: none;
+}
+
+
+header {
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+
+.title{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header h2{
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-right: 3px solid #111;
+    border-top: 3px solid #111;
+    border-left: 3px solid #111;
+}
+
+.button{
+    font-size: 15px;
+    width: fit-content;
+    background: lightgreen;
+    padding: 4px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Search box */
+.search-box{
+    background: white;
+    width: 98%;
+    margin: 0 auto;
+    padding: 7px;
+    overflow: hidden;
+    border-left: 1px solid #111;
+    border-bottom: 1px solid #111;
+    border-right: 1px solid #111;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search-box .boxes{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.search-box button:hover{
+    background: white;
+
+}
+.sb-textarea1{
+    width: 60%;
+    text-align: right;
+    float: left;
+}
+
+.sb-textarea1 input{
+    padding: 5px;
+}
+
+.search-box a{
+    color: black;
+    float: right;
+    text-decoration: none;
+}
+
+.search-box a:hover{
+    background: white;
+}
+/* For bigger screens */
+@media only screen and (min-width: 650px){
+    header{
+        padding: 20px 80px 20px;
+        margin: 0 auto;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    header h2{
+        margin: 0 auto;
+    }
+
+    .search-box{
+        width: 98%;
+        margin: 0 auto;
+        padding: 1% 10%;
+    }
+}
+
+
+
+
+/* Main */
+
+main section{
+    width: 98%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding-top: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.input{
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.information-box{
+    background: #111;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.information-box h3{
+    font-size: 40px;
+}
+
+.information-box h4{
+    font-size: 20px;
+}
+
+.tableOfReservation{
+    width: 90%;
+    margin: 10px auto;
+}
+
+main section .tableOfReservation table{
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+main section .tableOfReservation table td, th, tr{
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px 5px;
+}
+
+main section .tableOfReservation h3{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.searchItem{
+    width: 100%;
+    margin: 15px auto;
+    border-radius:  20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    background: lightgreen;
+}
+
+#searchItemhref{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.login-box{
+    width: 60%;
+    margin: 0 auto;
+    border-radius:  20px;
+    padding: 20px;
+    border: 1px solid black;
+    background: lightgreen;
+}
+
+.login-form{
+    background: white;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.login-form form{
+    text-align: center;
+}
+
+.login-form form input[type="text"]{
+    padding: 7px;
+    text-decoration: none;
+    font-family:  inherit;
+}
+.login-form form input[type="password"]{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 7px;
+    text-decoration: none;
+    font-family:  inherit;
+}
+
+.login-form form input[type="submit"]:hover{
+    
+    background: white;
+}
+
+.reservation-box{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.reservation-box .reservation-form form input{
+    width: 80%;
+    margin: 5px auto 10px;
+    text-decoration: none;
+    font: inherit;
+    padding: 5px 10px;
+}
+
+.reservation-box .reservation-form form input[type="submit"]:hover{
+    background: white;
+}
+
+@media only screen and (min-width: 650px){
+    main section{
+        width: 80%;
+        margin: 3% 10%;
+        padding: 35px;
+    }
+
+    .information-box{
+        margin: 15% auto;
+        width: 45%;
+        float: right;
+    }
+        
+
+    main section .tableOfReservation{
+        width: 55%;
+        padding: 0;
+        float: left;
+    }
+
+    main section .tableOfReservation table{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .reservation-box{
+        width: 45%;
+        padding: 20px;
+        float: right;
+    }
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 20px 40px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+footer ul{
+    width: fit-content;
+    line-height: 40px;
+    float: left;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sm-icons{
+    width: 45px;
+    float: right;
+}
+
+.sm-icons a img{
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+
+@media only screen and (min-width: 800px){
+    footer{
+        width: 80%;
+        margin: 10px auto 0px;
+    }
+}
+
